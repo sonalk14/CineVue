@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(44, 46, 54);
+}
+.card{
+    background-color: rgb(44, 46, 54);
+
+}
+.row{
+    margin-right:20px ;
+}
+
+.nav{
+    height:70px;
+}
+.nav img{
+    height: 75px;
+    width: 220px;
+    margin-left: 20px;
+}
+.nav button{
+    color:red;
+    background-color: black;
+   
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 6px 20px;
+    margin: 20px;
+    margin-right: -100px;
+    
+    
+   
+    
+}
+.clr{
+    color: white;
+}
+.searchbox{
+    height: 30px;
+    width: 400px;
+    margin-top: 20px;
+}
+.btn{
+    color: white;
+    border: 2px solid ;
+    padding: 2px 2px;
+}
+    .btn:hover{
+    background-color:grey;
+}    
+
+
+
+.img-thumbnail{
+    transition: transform .2s;
+    
+}
+.img-thumbnail:hover {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(0.5); /* Safari 3-8 */
+    transform: scale(1.09); 
+  }
+
+  .footer{
+    /* border: 2px solid red; */
+    
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .bx{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color:grey;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 12px;
+}
+.hr-lines{
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+.hr-lines:before{
+    content: "";
+    height:2px;
+    width: 500px;
+    background:grey;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.hr-lines:after{
+    content: "";
+    height:2px;
+    width: 500px;
+    background: grey;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+h2{
+    color: grey;
+}
+.cc{
+    color: grey;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}

@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'CSS/movies.css'%}">
+</head>
+<body>
+    <div class="nav">
+        <a href="/"><img src="{%static 'images/logo.png'%}" alt=""></a>
+        <form class="d-flex" method="post" action="{%url 'searchM' %}">
+            {%csrf_token%}
+            <input class="searchbox" type="search" placeholder="search" name="q"> 
+            
+        </form>
+        {%block drop%}
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{%url 'moviesDisplay' %}">all</a></li>
+              <li><a class="dropdown-item" href="/horror">Horror</a></li>
+              <li><a class="dropdown-item" href="/adventure">Action</a></li>
+              <li><a class="dropdown-item" href="/comedy">comedy</a></li>
+            </ul>
+          </div>
+          {%endblock%}
+        
+    </div>
+    {%block body%}
+    <div class="row m-5 col-md-8">
+        <h2 class="clr" ><b>MOVIES</b></h2>
+        <p class="clr">Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.</p>
+    </div>
+    <div class="row m-2">
+        {%for x in movie%}
+        <div class="col-md-3 mb-2">
+          <a href="{%url 'Specific' x.pk %}">
+          <img src="{{x.image.url}}" class="img-thumbnail" alt="...">
+       
+          </a>
+                  
+        </div>
+                
+              
+    
+          {%endfor%}
+    </div>
+  {%endblock%}  
+  <div class="line">
+    <h2 class="hr-lines">CineVue</h2>
+</div>
+<div class="footer">
+    <a href=""><i class='bx bxl-instagram'></i></a>
+     <a href=""><i class='bx bxl-facebook-circle'></i></a>
+     <a href=""><i class='bx bxl-twitter'></i></a>
+     <a href=""><i class='bx bxl-youtube'></i></a>
+     <a href=""><i class='bx bxl-pinterest'></i></a>
+ </div>
+
+ <div class="cc">
+    <h6>Copyright 2024 &copy Bigtree entertainment pvt ltd.</h6>
+    <h6>All rights Reserved</h6>
+ </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

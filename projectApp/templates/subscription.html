@@ -1,0 +1,32 @@
+{%extends 'login.html'%}
+{%block body%}
+<div class="container">
+<h3 style="background-color:aquamarine;">User deatils</h3>
+<p>User : <b>{{user.username}}</b></p>
+<p>Email : <b>{{user.email}}</b></p>
+</div>
+<hr>
+<div class="container">
+<div class="row m-4">
+ <h3>You are just one click away from enjoying movies!</h3>
+    
+    {%for x in movie %}
+<div class="card col-md-3 m-3 ml-3"><a class="a" href="{%url 'buy' x.s_id %}">
+    <div class="card-header bg-secondary mb-3 p-3" style="color:black; ">
+      <h5>{{x.name}}</h5>
+    </div>
+    <div class="card-body ">
+        <h6 class="card-title">Quality</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{x.quality}}</h6><hr>
+        <h6 class="card-title">Resolutions</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{x.resolution}}</h6><hr>
+        <h6 class="card-title">Price</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Rs.{{x.price}}</h6>
+    </a>
+    </div>
+  </div>
+  {%endfor%}
+</div>
+</div>
+</div>
+{%endblock%}

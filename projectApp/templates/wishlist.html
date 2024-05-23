@@ -1,0 +1,25 @@
+{%extends 'movies.html'%}
+{%block body%}
+{%block drop%}
+{%endblock%}
+<div class="container-fluid">
+  
+<h3 class="clr">My Wishlist</h3>
+
+    <div class="row m-2">
+    
+    {%for x in movies %}
+    <div class="card border-0" style="width: 18rem; ">
+        <a href="{%url 'Specific' x.movie.pk %}"><img src="{{x.movie.image.url}}" class="card-img-top" alt="..." height="200px" width="100px"></a>
+        <div class="card-body">
+          
+          
+          <a href="/deleteWishlist/{{x.movie.m_id}}" class="btn">Remove</a>
+         
+          <a href="{%url 'Specific' x.movie.pk %}" class="btn">Watch</a>
+        </div>
+      </div>
+
+      {%endfor%}
+</div>
+{%endblock%}

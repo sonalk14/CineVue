@@ -1,0 +1,47 @@
+body{
+    background: rgb(44, 46, 54);
+}
+.nav img{
+    height: 75px;
+    width: 220px;
+    margin-left: 20px;
+}
+
+
+
+
+
+.box{
+   
+    box-shadow: 0 4px 8px 0 rgba(29, 7, 7, 0.363), 0 6px 20px 0 rgba(8, 8, 8, 0.938);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(29, 26, 26, 0.932);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+} 
+.card .a{
+    text-decoration: none;
+    
+}
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(211, 66, 66, 0.582), 0 6px 20px 0 rgba(8, 8, 8, 0.938);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(192, 101, 101, 0.932);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+    
+}
+.row{
+    width: 100%;
+}
+.box{
+   
+    box-shadow: 0 4px 8px 0 rgba(29, 7, 7, 0.363), 0 6px 20px 0 rgba(8, 8, 8, 0.938);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(29, 26, 26, 0.932);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+} 
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(211, 66, 66, 0.582), 0 6px 20px 0 rgba(8, 8, 8, 0.938);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(192, 101, 101, 0.932);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+}
